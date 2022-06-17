@@ -18,7 +18,7 @@ function Team(props) {
 
     const teamId = params.teamId;
 
-    const { loading, error, data } = useQuery(GET_USER_SENTIMENTS, {
+    const { loading, data } = useQuery(GET_USER_SENTIMENTS, {
         variables: {
             dateRange: props.dateRange,
             teamId

@@ -27,7 +27,6 @@ const wordCloudOptions = {
 
 const wordCloudCallbacks = {
     getWordColor: (word) => {
-        console.log(word);
         return word.color;
     }
 }
@@ -37,7 +36,7 @@ const mapDataToCloudFormat = (words, color) => {
 }
 
 function ElaborationWords(props) {
-    const { loading, error, data } = useQuery(GET_WORD_FREQUENCY, {
+    const { loading, data } = useQuery(GET_WORD_FREQUENCY, {
         variables: props
     });
 

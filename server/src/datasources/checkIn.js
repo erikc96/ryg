@@ -15,7 +15,6 @@ class CheckInApi extends DataSource {
         const res = await this.store.checkIn.findAll({
             where: { key }
         })
-        console.log(res);
         return res && res.length ? res[0].get() : false;
     }
 

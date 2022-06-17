@@ -14,7 +14,7 @@ const GET_CHECK_INS = gql`
 }`
 
 function SelectionCharts(props) {
-    const { loading, error, data } = useQuery(GET_CHECK_INS, {
+    const { loading, data } = useQuery(GET_CHECK_INS, {
         variables: props
     });
 

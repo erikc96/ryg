@@ -13,7 +13,7 @@ query AllTeamsSentiment($dateRange: [String]) {
 }`
 
 function Home(props) {
-  const { loading, error, data } = useQuery(GET_TEAM_SENTIMENTS, {
+  const { loading, data } = useQuery(GET_TEAM_SENTIMENTS, {
     variables: props
   });
 
